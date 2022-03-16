@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Manrope:wght@800&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--Dark-Grayish-Blue);
+  max-height: 400px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.title {
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1.5rem;
+}
+.advice {
+  font-size: 28px;
+  color: var(--Light-Cyan);
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  max-width: 0 auot;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translate(-50%);
+  background-color: var(--Neon-Green);
+  padding: 1rem;
+  border-radius: 50px;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* .btn:hover {
+  background-color: var(--Neon-Green);
+  color: hsl(150, 100%, 66%);
+  /* box-shadow: 0.5px 0.5px 1px 2px #000000; */
+/* } */
+/* .attribution {
+  position: absolute;
+  right: 50%;
+  bottom: -150px;
+  font-size: 20px;
+  flex-direction: column-reverse;
+  flex: 1;
+  float: center; */
+/* margin-left: 8rem; */
+/* } */
+
+@media screen and (max-width: 750px) {
+  body {
+    font-family: "Manrope", sans-serif;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .card {
+    background-color: var(--Dark-Grayish-Blue);
+    max-height: 350px;
+    max-width: 300px;
+    margin-right: 3.3rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  .title {
+    font-size: 10px;
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
+  }
+  .advice {
+    font-size: 12px;
+    color: var(--Light-Cyan);
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .divider {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    max-width: 0 auot;
+  }
+
+  .btn {
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    transform: translate(-50%);
+    background-color: var(--Neon-Green);
+    padding: 0.3rem;
+    border-radius: 50px;
+    border-style: none;
+    cursor: pointer;
+  }
+}
