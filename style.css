@@ -110,7 +110,7 @@ body {
     background-color: var(--Dark-Grayish-Blue);
     max-height: 350px;
     max-width: 300px;
-    margin-right: 3.3rem;
+/*     margin-right: 3.3rem; */
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
